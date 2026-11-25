@@ -1,0 +1,61 @@
+:root { --accent: #36594d; --ink: #222b25; --muted: #626c61; --bg: #f8f7f2; --header: rgba(248,247,242,.96); }
+:root[data-theme="dark"] { --accent: #b3cabb; --ink: #edece6; --muted: #b1b8af; --bg: #1b211e; --header: rgba(27,33,30,.96); }
+.site-header { min-height:72px; padding-block:12px; }
+.brand-mark { width:34px; height:34px; }
+.nav-dot { display:none; }
+.cover { width:calc(100% - 64px); max-width:1700px; margin:24px auto 0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); direction:ltr; min-height:clamp(520px,73svh,810px); }
+.cover-copy { background:#193b30; color:#f6f1e6; display:flex; align-items:center; justify-content:center; text-align:center; flex-direction:column; padding:clamp(32px,4vw,74px); }
+.cover-role { font-size:15px; color:#d1ddd3; margin-bottom:20px; }
+.cover-copy h1 { font-weight:400; font-size:clamp(54px,5.7vw,99px); line-height:1.16; letter-spacing:-.045em; }
+.cover-copy h1 span { display:block; }
+html[lang=en] .cover-copy h1 { font-family:Georgia,'Times New Roman',serif; }
+html[lang=fa] .cover-copy h1 { line-height:1.36; letter-spacing:-.045em; }
+.cover-rule { width:35px; height:1px; background:#a6b8a8; margin:25px auto 19px; }
+.cover-bio { font-size:clamp(14px,1.14vw,19px); max-width:35ch; color:#e1e5da; line-height:1.9; }
+.cover-link { display:inline-flex; align-items:center; gap:12px; border-bottom:1px solid #8fa69b; padding-bottom:5px; font-size:13px; margin-top:34px; }
+.cover-link .icon { width:16px;height:16px; }
+.cover-plate { position:relative; overflow:hidden; background:#b7b4ae; }
+.cover-plate img { position:absolute; width:100%; height:100%; inset:0; object-fit:cover; }
+.plate-credit { position:absolute; bottom:0; inset-inline:0; display:flex; justify-content:space-between; align-items:end; text-align:start; padding:65px 28px 21px; color:#fff; background:linear-gradient(transparent,rgba(26,25,22,.65)); font-size:17px; }
+.plate-credit small { display:block; font-size:12px; }
+.plate-credit .icon { width:19px; height:19px; }
+.section-heading { min-height:0; }
+html[lang=en] h2, html[lang=en] .case-heading h2 { font-family:Georgia,'Times New Roman',serif; font-weight:400; }
+.selected-work { padding-top:75px; }
+.featured-caption { display:flex; justify-content:space-between; align-items:center; }
+.project-stage { height:clamp(320px,45vw,610px); }
+.stage-dieline { opacity:.14; }
+.model-feature { height:clamp(420px,48vw,650px); }
+.model-content h2 { font-size:clamp(36px,4vw,64px); margin-bottom:24px; }
+.model-content { justify-content:end; padding-bottom:55px; }
+.practice-photo { height:clamp(350px,38vw,550px); overflow:hidden; }
+.practice-photo img { width:100%; height:100%; object-fit:cover; object-position:50% 72%; }
+.about-copy h2 { margin-top:0; }
+.about-copy .bio { margin:22px 0; }
+.credential,.language-card,.degree-card { background:var(--surface); color:var(--ink); min-height:0; padding:clamp(25px,3vw,52px); }
+.credential h3,.language-card h3 { margin:0 0 10px; }
+.credential-review,.language-card .credential-review { margin-top:22px; }
+.contact-section { background:#193b30; color:#f6f1e6; }
+.contact-section h2 { margin-bottom:38px; }
+.contact-bottom { border-color:#75877e; }
+.contact-links a,.contact-links button { color:inherit; border-color:#75877e; }
+.contact-links a:hover,.contact-links button:hover { color:#d8e3d7; }
+.review-legend { color:var(--muted); }
+html[lang=fa] h2,html[lang=fa] h3 {letter-spacing:normal;}
+@media(max-width:720px) {
+ .cover { width:calc(100% - 28px); grid-template-columns:1fr; margin-top:14px; min-height:0; }
+ .cover-copy { padding:32px 24px; }
+ .cover-copy h1 { font-size:clamp(40px,10vw,64px); }
+ .cover-copy h1 span { display:inline; }
+ .cover-copy h1 span + span:before { content:' '; }
+ .cover-role { margin-bottom:10px; font-size:12px; }
+ .cover-rule { margin:15px auto 10px; }
+ .cover-bio { font-size:13px; max-width:36ch; }
+ .cover-link { margin-top:17px; font-size:12px; }
+ .cover-plate { aspect-ratio:1.25; }
+ .plate-credit { padding:32px 16px 12px; font-size:14px; }
+ .selected-work { padding-top:42px; }
+ .featured-caption { align-items:start; }
+ .practice-photo { width:100%; height:310px; }
+ .model-content {padding-bottom:30px;}
+}
